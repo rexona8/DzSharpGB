@@ -22,10 +22,9 @@ string Palindrome(int number)
     return "";
 }
 
-int number = ReadInt("Введите число: ");
 bool CountNumbers(int count)
 {
-    if (number < 9999 || number > 99999)
+    if (count < 9999 || count > 99999)
     {
         System.Console.WriteLine("Число не пятизначное");
         return false;
@@ -33,6 +32,7 @@ bool CountNumbers(int count)
     return true;
 }
 
+int number = ReadInt("Введите число: ");
 if (CountNumbers(number))
 {
     string count = Palindrome(number);
