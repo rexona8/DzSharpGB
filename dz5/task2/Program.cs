@@ -27,7 +27,7 @@ void PrintArray(int[] array)
     System.Console.WriteLine();
 }
 
-void EvenNumbers(int[] arr)
+void OddSumNumbers(int[] arr)
 {
     int sum = 0;
     for (int i = 0; i < arr.Length; i = i + 2)
@@ -42,4 +42,4 @@ int min = ReadInt("Введите минимальную границу: ");
 int max = ReadInt("Введите максимальную границу: ");
 int[] array = CreateArray(len, min, max);
 PrintArray(array);
-EvenNumbers(array);
+OddSumNumbers(array);
