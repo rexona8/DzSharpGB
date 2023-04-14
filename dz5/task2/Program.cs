@@ -30,14 +30,11 @@ void PrintArray(int[] array)
 void EvenNumbers(int[] arr)
 {
     int sum = 0;
-    for (int i = 0; i < arr.Length; i++)
+    for (int i = 0; i < arr.Length; i = i + 2)
     {
-        if (arr[i] % 2 != 0)
-        {
-            sum = sum + arr[i];
-        }
+        sum = sum + arr[i];
     }
-    System.Console.WriteLine($"Сумма нечётных чисел в массиве равна: {sum}");
+    System.Console.WriteLine($"Сумма чисел на нечётных позициях равна: {sum}");
 }
 
 int len = ReadInt("Введите число: ");
