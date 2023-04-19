@@ -15,7 +15,7 @@ double[,] Create2DArray(int rows, int cols)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = Math.Round(rand.Next(1, 101)* 0.1, 1);
+            array[i, j] = Math.Round(rand.Next(1, 101) * 0.1, 1);
         }
     }
     return array;
