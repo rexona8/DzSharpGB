@@ -3,7 +3,7 @@
 // M = 1; N = 5 -> "2, 4"
 // M = 4; N = 8 -> "4, 6, 8"
 
-void SumEven(int m, int n)
+void EvenNum(int m, int n)
 {
     if (m > n)
     {
@@ -13,7 +13,7 @@ void SumEven(int m, int n)
     {
         System.Console.Write($"{m} ");
     }
-    SumEven(m + 1, n);
+    EvenNum(m + 1, n);
 }
 
-SumEven(1, 5);
+EvenNum(1, 5);
